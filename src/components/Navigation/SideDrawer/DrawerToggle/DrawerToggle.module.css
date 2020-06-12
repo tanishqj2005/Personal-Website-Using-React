@@ -1,0 +1,100 @@
+.DrawerToggle {
+    width: 40px;
+    height: 60%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    left: 80%;
+    z-index: 30;
+    top:18%;
+    animation: rotate 2s alternate-reverse infinite;
+}
+
+.DrawerToggle div {
+    width: 90%;
+    height: 3px;
+    background-color: white;
+    transition: all .8s ease-in-out;
+}
+
+@media(min-width:700px){
+    .DrawerToggle{
+        display: none;
+    }
+}
+
+.drawerOpen1{
+    transform: scale(1.2);
+    animation: open1 .8s forwards;
+}
+.drawerOpen2{
+    transform: scale(1.2);
+    animation: open2 .8s forwards;
+}
+.drawerClose1{
+    animation: close1 .3s forwards;
+}
+.drawerClose2{
+    animation: close2 .3s forwards;
+}
+
+@keyframes open1{
+    from{
+        background-color: whitesmoke;
+        transform: rotate(0deg);
+    }
+    to{
+        background-color: gray;
+        transform: rotate(65deg);
+    }
+}
+@keyframes close1{
+    from{
+        background-color: gray;
+        transform: rotate(65deg);
+    }
+    to{
+        background-color: whitesmoke;
+        transform: rotate(0deg);
+    }
+}
+@keyframes open2{
+    from{
+        background-color: whitesmoke;
+        transform: rotate(0);
+    }
+    to{
+        background-color: gray;
+        transform: rotate(-65deg);
+    }
+}
+@keyframes close2{
+    from{
+        background-color: gray;
+        transform: rotate(-65deg);
+    }
+    to{
+        background-color: whitesmoke;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0);
+    }
+    25%{
+        transform: rotate(180deg);
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

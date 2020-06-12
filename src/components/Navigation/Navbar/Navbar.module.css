@@ -1,0 +1,12 @@
+.Navbar{
+    position: fixed;
+    top:0;
+    left:0;
+    height:12vh;
+    z-index:400;
+    background-color: transparent;
+    width: 100%;
+}
+.Navbar a{
+    text-decoration: none;
+}

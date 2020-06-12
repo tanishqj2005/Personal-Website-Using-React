@@ -1,0 +1,68 @@
+.Button {
+  border-radius: 18px;
+  outline: none;
+  cursor: pointer;
+  font: inherit;
+  padding: 10px;
+  border: 2px solid white;
+  margin: 10px 30px;
+  font-weight: bold;
+  background-color: red;
+  animation: bounce 0.7s alternate-reverse infinite ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.Button a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: "Permanent Marker";
+  font-size: 4vh;
+}
+
+.Button:hover {
+  background-color: #f3160680;
+  box-shadow: 3px 3px 1px white;
+  transform: scale(1.1);
+}
+
+.Button a:hover {
+  color: rgb(187, 181, 181);
+}
+
+@media (max-width: 540px) {
+  .Button a {
+    font-size: 2.4vh;
+  }
+}
+@media (max-width: 370px) {
+  .Button a {
+    font-size: 2vh;
+  }
+}
+@media (max-width: 330px) {
+  .Button a {
+    font-size: 5vw;
+  }
+}
+@media (max-width: 400px) {
+  .Button {
+    animation: bounce2 .8s alternate-reverse infinite ease-in-out;
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+@keyframes bounce2 {
+  from {
+    transform: scale(0.95);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}

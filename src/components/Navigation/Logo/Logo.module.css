@@ -1,0 +1,62 @@
+.Logo {
+  font-family: "Permanent Marker", cursive;
+  position: absolute;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6.3vh;
+  color: yellow;
+  
+  border-bottom: 1px solid whitesmoke;
+  left: 7%;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  outline: none;
+  box-sizing: border-box;
+  text-shadow: -2px -3px rgb(211, 76, 130);
+  animation: bounce 2s alternate-reverse infinite;
+}
+
+.Logo:hover {
+  color: rgb(251, 255, 35);
+  text-shadow: -2px -3px hotpink;
+  
+  border-bottom: 2px solid whitesmoke;
+}
+
+@media (max-width: 920px) {
+  .Logo {
+    font-size: 5.6vh;
+  }
+}
+
+@media(max-width:455px){
+  .Logo {
+    font-size: 4vh;
+    animation: colorChange 1.5s alternate-reverse infinite;
+  }
+
+}
+@media(max-width:330px){
+  .Logo {
+    font-size: 9vw;
+  }
+}
+
+@keyframes bounce{
+  from{
+    transform: scale(0.95);
+  }
+  to{
+    transform: scale(1.05);
+  }
+}
+@keyframes colorChange{
+  from{
+    color:rgb(251, 255, 35);
+  }
+  to{
+    color:rgb(61, 255, 35);
+  }
+}

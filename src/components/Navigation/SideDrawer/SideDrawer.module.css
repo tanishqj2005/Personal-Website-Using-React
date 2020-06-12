@@ -1,0 +1,33 @@
+.SideDrawer {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  background: rgb(24, 49, 103);
+  background: linear-gradient(
+    90deg,
+    rgba(24, 49, 103, 1) 0%,
+    rgba(92, 6, 6, 1) 100%,
+    rgba(47, 8, 91, 1) 100%,
+    rgba(2, 0, 36, 1) 100%,
+    rgba(34, 121, 9, 0.014740930551908282) 100%
+  );
+  z-index: 20;
+  transition: all .4s ease-in-out;
+}
+
+.SideDrawer.Show {
+  transform: translateY(100vh);
+}
+
+.SideDrawer.Close {
+  transform: translateY(-100vh);
+}
+
+@media (min-width: 700px) {
+  .SideDrawer {
+    display: none;
+  }
+}

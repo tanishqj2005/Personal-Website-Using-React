@@ -1,0 +1,5 @@
+.Logos{
+    display: flex;
+    flex-direction: row;
+    border-top: 2px solid white;
+}

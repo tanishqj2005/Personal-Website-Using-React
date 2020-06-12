@@ -1,0 +1,54 @@
+.NavigationItem {
+  margin: 0px 5vw;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  font-size: 3.4vh;
+  transition: all 1s ease-in-out;
+}
+
+.NavigationItem a {
+  font-family: "Permanent Marker", cursive;
+  color: green;
+  text-shadow: 1.4px -1.4px whitesmoke;
+  text-decoration: none;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.NavigationItem a:hover{
+  color: orangered;
+}
+
+.NavigationItem a:active,
+.NavigationItem a.active
+ {
+  color: red;
+}
+
+@media (min-width: 700px) {
+  .NavigationItem a:hover {
+    border-bottom: 2px solid whitesmoke;
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 700px){
+  .NavigationItem{
+    margin: 5vw 0;
+    font-size: 5.4vh;
+  }
+  .NavigationItem a:hover {
+    transform: scale(1.2);
+  }
+}
+
+
+@media(min-width:701px) and (max-width:920px){
+  .NavigationItem{
+    margin: 0px 4vw;
+    font-size: 3.1vh;
+  }
+}

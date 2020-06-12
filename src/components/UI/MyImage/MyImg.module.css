@@ -1,0 +1,40 @@
+.MyImg{
+    position: absolute;
+    top: 27vh;
+    left:15vw;
+    border:5px solid white;
+    border-radius: 18px;
+    transform: rotate(-3deg);
+    background-color: hotpink;
+    box-shadow: 2px 2px 15px whitesmoke;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+    
+    animation: spin 4s alternate-reverse infinite;
+}
+
+.MyImg img{
+    margin: 9px 9px 5px 9px;
+    height:40vh;
+    width:40vh;
+}
+
+
+@keyframes spin{
+    25%{
+        transform: rotate(60deg);
+    }
+    50%{
+        transform: rotate(-30deg);
+    }
+    75%{
+        transform: rotate(50deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+
+.MyImg:hover{
+    animation: step-end;
+}

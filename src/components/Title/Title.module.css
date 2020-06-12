@@ -1,0 +1,73 @@
+.Title {
+  position: absolute;
+  top: 34%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 14.5vh;
+  color: white;
+  cursor: default;
+  font-family: "Permanent Marker", cursive;
+}
+
+.Name {
+  transition: all 0.3s ease;
+  animation: spin 2s alternate-reverse infinite;
+  color: yellow;
+  text-shadow: -2px -7px hotpink;
+}
+
+.Name:hover {
+  color: gold;
+}
+
+.Begin {
+  text-shadow: -2px -7px brown;
+  transition: all 0.3s ease;
+  animation: spin2 1.9s alternate-reverse infinite;
+}
+
+.Begin:hover {
+  color: rgb(173, 169, 169);
+}
+
+@media (max-width: 920px) and (min-width: 700px) {
+  .Title {
+    font-size: 11.1vh;
+  }
+}
+
+@media (max-width: 700px) {
+  .Title {
+    display: none;
+  }
+}
+
+@keyframes spin {
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes spin2 {
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}

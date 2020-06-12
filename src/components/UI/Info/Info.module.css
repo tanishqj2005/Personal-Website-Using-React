@@ -1,0 +1,35 @@
+.Info{
+    position: relative;
+    color:whitesmoke;
+    top:10vh;
+    left:55vw;
+}
+
+.Info h1{
+    font-family: 'Permanent Marker';
+    color:yellow;
+    text-indent: inherit;
+    font-size: 5rem;
+    text-shadow: 2px 7px rgb(151, 18, 151);
+    transition: all 1s ease-in-out;
+    cursor: default;
+}
+
+.Info h1:hover{
+    animation: bounce 1s forwards;
+}
+
+@keyframes bounce{
+    25%{
+        transform: translateY(-5vh);
+    }
+    50%{
+        transform: translateY(-5vh);
+    }
+    75%{
+        transform: translateY(-5vh);
+    }
+    100%{
+        transform: translateY(0vh);
+    }
+}
