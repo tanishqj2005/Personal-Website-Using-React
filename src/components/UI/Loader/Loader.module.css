@@ -1,0 +1,29 @@
+.Loader{
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+    background-color: green;
+    color: white;
+    text-shadow: -5px -7px black;
+    font-size: 10vw;
+    font-weight: 800;
+    font-family: 'Permanent Marker';
+    transition: all .1s ease-in;
+    animation: col 3s forwards;
+}
+
+@keyframes col{
+    0%{
+        background-color: green;
+    }
+    33%{
+        background-color: red;
+    }
+    66%{
+        background-color: yellow;
+    }
+}

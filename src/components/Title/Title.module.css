@@ -24,7 +24,7 @@
 .Begin {
   text-shadow: -2px -7px brown;
   transition: all 0.3s ease;
-  animation: spin2 1.9s alternate-reverse infinite;
+  animation: spin2 2s 1s alternate-reverse infinite;
 }
 
 .Begin:hover {
@@ -45,13 +45,13 @@
 
 @keyframes spin {
   25% {
-    transform: rotate(10deg);
+    transform: rotate(7deg);
   }
   50% {
-    transform: rotate(-10deg);
+    transform: rotate(-8deg);
   }
   75% {
-    transform: rotate(10deg);
+    transform: rotate(6deg);
   }
   100% {
     transform: rotate(0);
@@ -59,13 +59,13 @@
 }
 @keyframes spin2 {
   25% {
-    transform: rotate(-10deg);
+    transform: rotate(2deg);
   }
   50% {
-    transform: rotate(10deg);
+    transform: rotate(-3deg);
   }
   75% {
-    transform: rotate(-10deg);
+    transform: rotate(2.3deg);
   }
   100% {
     transform: rotate(0);

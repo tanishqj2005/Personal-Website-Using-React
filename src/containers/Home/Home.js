@@ -17,7 +17,7 @@ class Home extends Component {
         <Title3 />
         <div className={classes.Buttons}>
           <Button color="red" to="/about">Know More?</Button>
-          <Button color="blue" to="/contact">Contact Me</Button>
+          <Button color="blue" to="/contact">Contact Me :)</Button>
         </div>
         <div className={classes.Logos}>
           <Logos/>

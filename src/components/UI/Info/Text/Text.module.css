@@ -1,0 +1,77 @@
+.Text {
+  position: relative;
+  color: whitesmoke;
+  top: 9.8vh;
+  left: 52vw;
+  width: 40%;
+  transition: all 0.2s ease-in-out;
+}
+
+.Text h1 {
+  font-family: "Permanent Marker";
+  color: rgb(128, 240, 134);
+  text-indent: inherit;
+  font-size: 1.7rem;
+  transition: all 0.6s ease-in-out;
+  cursor: default;
+}
+
+@media (min-width: 500px) {
+  .Text h1:hover {
+    background-color: honeydew;
+    color: black;
+    transform: translateY(-15%);
+    padding: 15px;
+    box-shadow: 3px 3px 13px rgb(227, 255, 71);
+  }
+}
+
+@media (max-width: 1100px) and (min-width: 801px) {
+  .Text {
+    left: 53.5vw;
+    top: 9vh;
+  }
+  .Text h1 {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 801px) and (min-width: 700px) {
+  .Text {
+    left: 53.5vw;
+    top: 12vh;
+  }
+  .Text h1 {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 701px) and (min-width: 600px) {
+  .Text {
+    left: 51.5vw;
+    top: 14.5vh;
+  }
+  .Text h1 {
+    font-size: 1.11rem;
+  }
+}
+@media (max-width: 601px) and (min-width: 501px) {
+  .Text {
+    left: 51.5vw;
+    top: 11.5vh;
+  }
+  .Text h1 {
+    font-size: 1.06rem;
+  }
+}
+@media (max-width: 500px) and (min-width: 200px) {
+  .Text {
+    border-bottom: 1px solid whitesmoke;
+    border-top: 1px solid whitesmoke;
+    left: 51.5vw;
+    top: 11.5vh;
+    max-height: 45vh;
+    overflow: scroll;
+  }
+  .Text h1 {
+    font-size: 1.2rem;
+  }
+}

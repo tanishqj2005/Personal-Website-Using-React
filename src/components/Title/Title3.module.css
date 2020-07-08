@@ -13,8 +13,8 @@
 }
 
 .Name {
-  color: rgb(39, 198, 209);
-  text-shadow: -2px -3px hotpink;
+  color: rgb(255, 199, 250);
+  text-shadow: -2px -3px rgb(161, 18, 90);
   transition: all 0.3s ease;
   padding: 0;
   animation: spin 2s alternate-reverse infinite;

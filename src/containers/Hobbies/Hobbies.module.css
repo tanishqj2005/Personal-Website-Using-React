@@ -1,0 +1,77 @@
+.Hobbies {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)),
+    url("../../assets/images/bg.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 0;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Img1 img {
+  height: 20vh;
+  width: 20vw;
+}
+
+.Img1 {
+  animation: spin1 1s alternate-reverse infinite;
+  position: absolute;
+  top: 27vh;
+  left: 5vw;
+}
+.Img2 {
+  animation: spin2 .7s alternate-reverse infinite;
+  position: relative;
+  top: 32vh;
+  left: -10vw;
+}
+
+.Img2 img {
+  height: 20vh;
+  width: 10vw;
+}
+.Img3 {
+  animation: spin3 1.5s 1s alternate-reverse infinite;
+  position: absolute;
+  top: 27vh;
+  right: 10vw;
+}
+
+.Img3 img {
+  height: 25vh;
+  width: 15vw;
+}
+
+@keyframes spin1 {
+  from {
+    transform: scaleZ(0.8);
+  }
+  to {
+    transform: scaleY(1.5);
+  }
+}
+
+@keyframes spin2 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(20vw);
+  }
+}
+
+@keyframes spin3 {
+  from {
+    transform: scaleX(0.6);
+  }
+  to {
+    transform: scaleX(1.4);
+  }
+}

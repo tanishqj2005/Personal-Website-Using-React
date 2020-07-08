@@ -1,0 +1,34 @@
+.HobbyInfo{
+    position: absolute;
+    color:whitesmoke;
+    top:3vh;
+    left:35vw;
+    animation: bounce 1.2s alternate-reverse infinite;
+}
+
+.HobbyInfo h1{
+    font-family: 'Permanent Marker';
+    color:yellow;
+    text-indent: inherit;
+    font-size: 5rem;
+    text-shadow: 2px 7px rgb(151, 18, 151);
+    transition: all .4s ease-in-out;
+    cursor: default;
+}
+
+.HobbyInfo h1:hover{
+    color:gold;
+}
+
+
+@keyframes bounce{
+    25%{
+        transform: rotate(4deg);
+    }
+    50%{
+        transform: rotate(-2deg);
+    }
+    100%{
+        transform: rotate(3deg);
+    }
+}

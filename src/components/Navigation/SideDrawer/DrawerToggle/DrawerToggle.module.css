@@ -29,11 +29,9 @@
 }
 
 .drawerOpen1{
-    transform: scale(1.2);
     animation: open1 .8s forwards;
 }
 .drawerOpen2{
-    transform: scale(1.2);
     animation: open2 .8s forwards;
 }
 .drawerClose1{
@@ -49,13 +47,13 @@
         transform: rotate(0deg);
     }
     to{
-        background-color: gray;
+        background-color: white;
         transform: rotate(65deg);
     }
 }
 @keyframes close1{
     from{
-        background-color: gray;
+        background-color: white;
         transform: rotate(65deg);
     }
     to{
@@ -69,13 +67,13 @@
         transform: rotate(0);
     }
     to{
-        background-color: gray;
+        background-color: white;
         transform: rotate(-65deg);
     }
 }
 @keyframes close2{
     from{
-        background-color: gray;
+        background-color: white;
         transform: rotate(-65deg);
     }
     to{
