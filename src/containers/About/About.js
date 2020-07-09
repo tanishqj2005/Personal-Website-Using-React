@@ -10,7 +10,7 @@ class About extends Component {
       return (
         <div className={classes.About}>
           <MyImg/>
-          <Info/>
+          <Info title='About Me :)'/>
           <Text/>
           <div className={classes.Buttons}>
           <Button color="red" to="/hobbies">My Hobbies</Button>

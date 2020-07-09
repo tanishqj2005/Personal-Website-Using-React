@@ -1,0 +1,44 @@
+.Contact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)),
+      url("../../assets/images/bg.jpg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 0;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+.Buttons button{
+    background-color: rgb(255, 251, 35);
+    font-family: 'Permanent Marker';
+    cursor: pointer;
+    outline: none;
+    border: 2px solid rgb(255, 0, 55);
+    font-size: 5vh;
+    border-radius: 10px;
+    text-shadow: -2px -2px hotpink;
+    transition: all .1s ease-in;
+}
+.Buttons button:hover{
+    animation: play 1s infinite alternate-reverse;
+}
+.Buttons{
+    margin-top: 5vh;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes play{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}

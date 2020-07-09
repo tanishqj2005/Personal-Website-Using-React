@@ -29,8 +29,8 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  animation: play1 1s forwards;
-  transition: all 1s linear ease-in;
+  animation: play1 0.7s 0.3s forwards;
+  transition: all 0.7s linear ease-in;
 }
 .overlay2 {
   z-index: 5;
