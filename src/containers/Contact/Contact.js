@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import classes from "./Contact.module.css";
 import Info2 from "../../components/UI/Info/Info2";
 import Input from "../../components/UI/Input/Input";
+import axios from 'axios';
+import {withRouter} from 'react-router-dom';
 
 class Contact extends Component {
   state = {
@@ -26,7 +28,16 @@ class Contact extends Component {
   };
 
   submitForm = () => {
-
+    axios.post('https://personal-website-adb81.firebaseio.com/', {
+      name: 'Tanishq',
+      email: 'tanishquj@gmail.com',
+      message: 'This is test entry',
+    })
+    .then((response) => {
+      console.log(response);
+    });
+    alert('Thanks for contacting me! I will write back to you as soon as possible!')
+    this.props.history.push('/');
   };
 
   render() {
@@ -59,4 +70,4 @@ class Contact extends Component {
   }
 }
 
-export default Contact;
+export default withRouter(Contact);
