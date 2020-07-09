@@ -15,7 +15,7 @@ class App extends Component {
   componentDidMount() {
     setTimeout(() => {
       this.setState({ loading: false });
-    }, 3000);
+    }, 3500);
   }
   render() {
     let routes = (
