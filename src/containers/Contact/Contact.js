@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import classes from "./Contact.module.css";
 import Info2 from "../../components/UI/Info/Info2";
 import Input from "../../components/UI/Input/Input";
-import axios from 'axios';
-import {withRouter} from 'react-router-dom';
+import axios from "axios";
+import { withRouter } from "react-router-dom";
 
 class Contact extends Component {
   state = {
@@ -28,16 +28,27 @@ class Contact extends Component {
   };
 
   submitForm = () => {
-    axios.post('https://personal-website-adb81.firebaseio.com/', {
-      name: 'Tanishq',
-      email: 'tanishquj@gmail.com',
-      message: 'This is test entry',
-    })
-    .then((response) => {
-      console.log(response);
-    });
-    alert('Thanks for contacting me! I will write back to you as soon as possible!')
-    this.props.history.push('/');
+    let name = this.state.name;
+    let email = this.state.email;
+    let message = this.state.message;
+    if (name === "" || email === "" || message === "") {
+      alert("Fill all details completely to contact me!");
+      this.props.history.push("/contact");
+    } else {
+      axios
+        .post("https://personal-website-adb81.firebaseio.com/", {
+          name: name,
+          email: email,
+          message: message,
+        })
+        .then((response) => {
+          console.log(response);
+        });
+      alert(
+        "Thanks for contacting me! I will write back to you as soon as possible!"
+      );
+      this.props.history.push("/");
+    }
   };
 
   render() {
@@ -63,7 +74,9 @@ class Contact extends Component {
           name="message"
         />
         <div className={classes.Buttons}>
-          <button type="button" onClick={this.submitForm}>Submit Form</button>
+          <button type="button" onClick={this.submitForm}>
+            Submit Form
+          </button>
         </div>
       </div>
     );
