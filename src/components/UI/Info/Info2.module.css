@@ -1,80 +1,98 @@
-.Info2{
-    position: relative;
-    color:whitesmoke;
-    top:3.5vh;
-    left:37vw;
-    animation: bounce 2.2s alternate-reverse infinite;
+.Info2 {
+  position: relative;
+  color: whitesmoke;
+  top: 6.5vh;
+  left: 37vw;
+  animation: bounce 2.2s alternate-reverse infinite;
 }
 
-.Info2 h1{
-    font-family: 'Permanent Marker';
-    color:yellow;
-    text-indent: inherit;
-    font-size: 5rem;
-    text-shadow: 2px 7px rgb(151, 18, 151);
-    transition: all .4s ease-in-out;
-    cursor: default;
+.Info2 h1 {
+  font-family: "Permanent Marker";
+  color: yellow;
+  text-indent: inherit;
+  font-size: 5rem;
+  text-shadow: 2px 7px rgb(151, 18, 151);
+  transition: all 0.4s ease-in-out;
+  cursor: default;
 }
 
-.Info2 h1:hover{
-    color:gold;
+.Info2 h1:hover {
+  color: gold;
 }
 
-
-@keyframes bounce{
-    25%{
-        transform: rotate(2deg);
-    }
-    50%{
-        transform: rotate(-1deg);
-    }
-    100%{
-        transform: rotate(2deg);
-    }
+@keyframes bounce {
+  25% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(2deg);
+  }
 }
 
-@media(max-width:1001px){
-    .Info2 h1{
-        font-size:4rem;
-    }
+@media (max-width: 1001px) {
+  .Info2 h1 {
+    font-size: 4rem;
+  }
 }
-@media(max-width:801px) and (min-width:700px){
-    .Info2 h1{
-        font-size:3.3rem;
-    }
+@media (max-width: 801px) and (min-width: 700px) {
+  .Info2 h1 {
+    font-size: 3.3rem;
+  }
 }
-@media(max-width:700px)and (min-width:530px){
-    .Info2 h1{
-        font-size:3rem;
-    }
+@media (max-width: 700px) and (min-width: 530px) {
+  .Info2 h1 {
+    font-size: 3rem;
+  }
+  .Info2 {
+    left: 50vw;
+  }
+}
+@media (max-width: 530px) and (min-width: 405px) {
+  .Info2 h1 {
+    font-size: 2.5rem;
+  }
+  .Info2 {
+    left: 45vw;
+    top: 11vh;
+  }
+}
+@media (max-width: 405px) and (min-width: 330px) {
+  .Info2 h1 {
+    font-size: 2.4rem;
+  }
+  .Info2 {
+    left: 30vw;
+    top: 12vh;
+  }
+}
+@media (max-width: 329px) and (min-width: 230px) {
+  .Info2 h1 {
+    font-size: 2.1rem;
+  }
+  .Info2 {
+    left: 18vw;
+    top: 12vh;
+  }
+}
+
+@media (max-width: 1400px) and (min-width: 650px){
+  .Info2 {
+    left: 33vw;
+  }
+}
+
+@media(max-width: 649px) and (min-width:450px){
     .Info2{
-        left:50vw;
+        left:28vw;
+        top:8.7vh;
     }
 }
-@media(max-width:530px)and (min-width:405px){
-    .Info2 h1{
-        font-size:2.5rem;
-    }
+@media(max-width: 449px) and (min-width:200px){
     .Info2{
-        left:45vw;
-        top:11vh;
-    }
-}
-@media(max-width:405px)and (min-width:330px){
-    .Info2 h1{
-        font-size:2.4rem;
-    }
-    .Info2{
-        left:30vw;
-        top:12vh;
-    }
-}
-@media(max-width:329px)and (min-width:230px){
-    .Info2 h1{
-        font-size:2.1rem;
-    }
-    .Info2{
-        left:18vw;
-        top:12vh;
+        left:20vw;
+        top:8.7vh;
     }
 }

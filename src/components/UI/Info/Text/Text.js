@@ -5,7 +5,7 @@ const Text = () => {
     return(
         <div className={classes.Text}>
             <h1>
-            Wie geht's? I am a freshie at IIT Jodhpur and I am from Mumbai, Mahrasthtra. I completed my Higher Secondary Education from Smt. Sulochanadevi Singhania School,Thane. I am currently in B Tech Electrical Engineering.
+            Wie geht's? I am a freshie at IIT Jodhpur and I am from Mumbai, Mahrasthtra. I completed my Higher Secondary Education from Smt. Sulochanadevi Singhania School,Thane. I am currently pursuing B Tech in Electrical Engineering.
             </h1>
         </div>
     );

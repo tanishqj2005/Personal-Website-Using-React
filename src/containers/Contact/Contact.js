@@ -55,24 +55,26 @@ class Contact extends Component {
     return (
       <div className={classes.Contact} id="Contact">
         <Info2 title="Contact Me :)" />
-        <Input
-          change={this.nameChangedHandler}
-          placeholder="Enter Your Name"
-          type="text"
-          name="name"
-        />
-        <Input
-          change={this.emailChangedHandler}
-          placeholder="Enter Your Email"
-          type="email"
-          name="email"
-        />
-        <Input
-          change={this.messageChangedHandler}
-          placeholder="Enter Your Message"
-          type="text"
-          name="message"
-        />
+        <div className={classes.Inputs}>
+          <Input
+            change={this.nameChangedHandler}
+            placeholder="Enter Your Name"
+            type="text"
+            name="name"
+          />
+          <Input
+            change={this.emailChangedHandler}
+            placeholder="Enter Your Email"
+            type="email"
+            name="email"
+          />
+          <Input
+            change={this.messageChangedHandler}
+            placeholder="Enter Your Message"
+            type="text"
+            name="message"
+          />
+        </div>
         <div className={classes.Buttons}>
           <button type="button" onClick={this.submitForm}>
             Submit Form

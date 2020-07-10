@@ -24,3 +24,9 @@
 .Input input:focus{
     border: 4px solid rgb(43, 226, 73);
 }
+
+@media(max-width: 450px){
+    .Input input{
+        font-size: 6vw;
+    }
+}
