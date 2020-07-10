@@ -36,7 +36,7 @@ class Contact extends Component {
       this.props.history.push("/contact");
     } else {
       axios
-        .post("https://personal-website-adb81.firebaseio.com/", {
+        .post("https://personal-website-adb81.firebaseio.com/Users", {
           name: name,
           email: email,
           message: message,
