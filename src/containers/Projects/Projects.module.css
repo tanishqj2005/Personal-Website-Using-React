@@ -1,0 +1,113 @@
+.Projects {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)),
+    url("../../assets/images/bg.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 0;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+.Info {
+  position: relative;
+  color: whitesmoke;
+  top: 35vh;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  animation: bounce 2.5s alternate-reverse infinite ease-in-out;
+}
+
+.Info h1 {
+  font-family: "Permanent Marker";
+  color: yellow;
+  text-indent: inherit;
+  font-size: 5rem;
+  text-shadow: 2px 7px rgb(151, 18, 151);
+  transition: all 0.4s ease-in-out;
+  cursor: default;
+}
+
+.Info h1:hover {
+  color: gold;
+}
+
+.Buttons {
+  width: 100%;
+  position: absolute;
+  top: 80%;
+  display: flex;
+  flex-direction: row;
+  left: 50%;
+}
+
+@keyframes bounce {
+  from {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.8);
+  }
+}
+
+@media (max-width: 1001px) {
+  .Info h1 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 801px) and (min-width: 700px) {
+  .Info h1 {
+    font-size: 3.3rem;
+  }
+}
+@media (max-width: 700px) and (min-width: 530px) {
+  .Info h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 530px) and (min-width: 405px) {
+  .Info h1 {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 405px) and (min-width: 330px) {
+  .Info h1 {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 329px) and (min-width: 230px) {
+  .Info h1 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .Info {
+    top: 42vh;
+    animation: bounce 2s alternate-reverse infinite ease-in-out;
+  }
+  .Info h1 {
+    text-shadow: 1px 3px rgb(151, 18, 151);
+  }
+}
+
+@media (max-width: 820px) and (min-width: 700px) {
+  .Buttons {
+    left: 40%;
+  }
+}
+@media (max-width: 700px) and (min-width: 600px) {
+  .Buttons {
+    left: 27%;
+  }
+}
+@media (max-width: 600px) and (min-width: 300px) {
+  .Buttons {
+    left: 0%;
+  }
+}

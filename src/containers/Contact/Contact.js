@@ -70,7 +70,7 @@ class Contact extends Component {
           />
           <Input
             change={this.messageChangedHandler}
-            placeholder="Enter Your Message"
+            placeholder="Leave A Message"
             type="text"
             name="message"
           />

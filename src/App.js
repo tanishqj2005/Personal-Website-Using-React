@@ -4,6 +4,7 @@ import { Route, Redirect } from "react-router-dom";
 import Layout from "./hoc/Layout/Layout";
 import About from "./containers/About/About";
 import Contact from "./containers/Contact/Contact";
+import Projects from "./containers/Projects/Projects";
 import { AnimatedSwitch } from "react-router-transition";
 import Hobbies from "./containers/Hobbies/Hobbies";
 import "./App.module.css";
@@ -30,6 +31,7 @@ class App extends Component {
         <Route path="/about" exact component={About} />
         <Route path="/hobbies" exact component={Hobbies} />
         <Route path="/contact" exact component={Contact} />
+        <Route path="/projects" exact component={Projects} />
         <Redirect to="/" />
       </AnimatedSwitch>
     );
