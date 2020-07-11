@@ -75,3 +75,9 @@
     transform: scaleX(1.4);
   }
 }
+
+@media(max-width: 1299px){
+  .Img{
+    display: none;
+  }
+}

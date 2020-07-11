@@ -1,0 +1,10 @@
+.Hobby{
+    color: white;
+}
+
+
+@media(min-width:1300px){
+    .Hobby{
+        display: none;
+    }
+}
