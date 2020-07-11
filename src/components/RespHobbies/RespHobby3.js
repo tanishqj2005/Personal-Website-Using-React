@@ -7,21 +7,21 @@ const RespHobby3 = (props) => {
   let infoClasses = null;
   let imgClasses = null;
   if(props.show){
-    infoClasses = [classes.Info1,classes.Show];
-    imgClasses = [classes.Img1,classes.Hide];
+    infoClasses = [classes.Info3,classes.Show];
+    imgClasses = [classes.Img3,classes.Hide];
   }
   else{
-    infoClasses = [classes.Info1,classes.Hide];
-    imgClasses = [classes.Img1,classes.Show];
+    infoClasses = [classes.Info3,classes.Hide];
+    imgClasses = [classes.Img3,classes.Show];
   }
   return (
-    <div className={dispClasses.join(" ")}>
+    <div className={dispClasses.join(" ")} onClick={props.clicked}>
       <div className={infoClasses.join(' ')}>
         I am highly interested in Software development and Artificial
         Intelligence. I like to create ML powered websites and apps and I have
         keen interest in designing!
       </div>
-      <div className={classes.Img3}>
+      <div className={imgClasses.join(' ')}>
         <img src={laptop} alt="laptop" />
       </div>
     </div>
