@@ -1,10 +1,104 @@
-.Hobby{
-    color: white;
+.Hobby {
+  color: black;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.Hobby1 {
+  margin-top: -10vh;
 }
 
+@media (min-width: 1300px) {
+  .Hobby {
+    display: none;
+  }
+}
+.Img1 img {
+  height: 10vh;
+  width: 10vh;
+}
+.Info1 {
+  transition: opacity 0.5s ease-in-out;
+  position: absolute;
+  font-family: 'Permanent Marker';
+  background-color: white;
+  max-width: 60%;
+  opacity: 0;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Img1 {
+  transition: opacity 0.5s ease-in-out;
+  height: 15vh;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: white;
+  z-index: 10;
+}
+.Img2 img {
+  height: 10vh;
+  width: 10vh;
+}
+.Info2 {
+  margin-top: 20vh;
+  position: absolute;
+  background-color: white;
+  max-width: 60%;
+  opacity: 0;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Img2 {
+  margin-top: 20vh;
+  height: 15vh;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: white;
+  z-index: 10;
+}
+.Img3 img {
+  height: 10vh;
+  width: 10vh;
+}
+.Info3 {
+  margin-top: 40vh;
+  position: absolute;
+  background-color: white;
+  max-width: 60%;
+  opacity: 0;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Img3 {
+  margin-top: 40vh;
+  height: 15vh;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: white;
+  z-index: 10;
+}
 
-@media(min-width:1300px){
-    .Hobby{
-        display: none;
-    }
+.Show{
+    opacity: 1;
+}
+
+.Hide{
+    opacity: 0;
 }
