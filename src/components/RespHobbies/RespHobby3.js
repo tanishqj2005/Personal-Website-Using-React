@@ -4,9 +4,19 @@ import laptop from "../../assets/images/laptop.png";
 
 const RespHobby3 = (props) => {
   let dispClasses = [classes.Hobby, classes.Hobby3];
+  let infoClasses = null;
+  let imgClasses = null;
+  if(props.show){
+    infoClasses = [classes.Info1,classes.Show];
+    imgClasses = [classes.Img1,classes.Hide];
+  }
+  else{
+    infoClasses = [classes.Info1,classes.Hide];
+    imgClasses = [classes.Img1,classes.Show];
+  }
   return (
     <div className={dispClasses.join(" ")}>
-      <div className={classes.Info3}>
+      <div className={infoClasses.join(' ')}>
         I am highly interested in Software development and Artificial
         Intelligence. I like to create ML powered websites and apps and I have
         keen interest in designing!

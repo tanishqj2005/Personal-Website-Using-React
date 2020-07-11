@@ -4,14 +4,24 @@ import ball from "../../assets/images/ball.png";
 
 const RespHobby2 = (props) => {
   let dispClasses = [classes.Hobby, classes.Hobby2];
+  let infoClasses = null;
+  let imgClasses = null;
+  if(props.show){
+    infoClasses = [classes.Info1,classes.Show];
+    imgClasses = [classes.Img1,classes.Hide];
+  }
+  else{
+    infoClasses = [classes.Info1,classes.Hide];
+    imgClasses = [classes.Img1,classes.Show];
+  }
   return (
     <div className={dispClasses.join(" ")}>
-      <div className={classes.Info2}>
+      <div className={infoClasses.join(' ')}>
         I play as a right arm spinner in the team. I can bowl both leg and off
         spin with deceptive variations. I can bat descently in the middle order
         and I enjoy cricket like nothing else!
       </div>
-      <div className={classes.Img2}>
+      <div className={imgClasses.join(' ')}>
         <img src={ball} alt="Ball" />
       </div>
     </div>
