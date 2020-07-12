@@ -63,3 +63,28 @@
         font-size:2.1rem;
     }
 }
+
+@media(max-width:1300px) and (min-width:840px){
+    .HobbyInfo{
+        left:30vw;
+        top:4.5vh;
+    }
+}
+@media(max-width:840px) and (min-width:540px){
+    .HobbyInfo{
+        left:25vw;
+        top:11.5vh;
+    }
+}
+@media(max-width:540px) and (min-width:340px){
+    .HobbyInfo{
+        left:24vw;
+        top:12.5vh;
+    }
+}
+@media(max-width:340px) and (min-width:240px){
+    .HobbyInfo{
+        left:16vw;
+        top:13.5vh;
+    }
+}

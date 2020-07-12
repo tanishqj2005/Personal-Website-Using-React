@@ -13,25 +13,37 @@ import RespHobby3 from "../../components/RespHobbies/RespHobby3";
 
 class Hobbies extends Component {
   state = {
-    showHobby1:false,
-    showHobby2:false,
-    showHobby3:false,
-  }
+    showHobby1: false,
+    showHobby2: false,
+    showHobby3: false,
+  };
   hobby1Handler = () => {
     this.setState((prevState) => {
-      return { showHobby1: !prevState.showHobby1 };
+      return {
+        showHobby1: !prevState.showHobby1,
+        showHobby2: false,
+        showHobby3: false,
+      };
     });
-  }
+  };
   hobby2Handler = () => {
     this.setState((prevState) => {
-      return { showHobby2: !prevState.showHobby2 };
+      return {
+        showHobby2: !prevState.showHobby2,
+        showHobby1: false,
+        showHobby3: false,
+      };
     });
-  }
+  };
   hobby3Handler = () => {
     this.setState((prevState) => {
-      return { showHobby3: !prevState.showHobby3 };
+      return {
+        showHobby3: !prevState.showHobby3,
+        showHobby1: false,
+        showHobby2: false,
+      };
     });
-  }
+  };
   render() {
     return (
       <div className={classes.Hobbies} id="Hobbies">
@@ -41,9 +53,18 @@ class Hobbies extends Component {
           <Hobby3 />
           <Hobby2 />
           <Hobby1 />
-          <RespHobby1 clicked={this.hobby1Handler} show={this.state.showHobby1}/>
-          <RespHobby2 clicked={this.hobby2Handler} show={this.state.showHobby2}/>
-          <RespHobby3 clicked={this.hobby3Handler} show={this.state.showHobby3}/>
+          <RespHobby1
+            clicked={this.hobby1Handler}
+            show={this.state.showHobby1}
+          />
+          <RespHobby2
+            clicked={this.hobby2Handler}
+            show={this.state.showHobby2}
+          />
+          <RespHobby3
+            clicked={this.hobby3Handler}
+            show={this.state.showHobby3}
+          />
         </div>
         <div className={[classes.Img, classes.Img1].join(" ")}>
           <img src={tabla} alt="tabla" />

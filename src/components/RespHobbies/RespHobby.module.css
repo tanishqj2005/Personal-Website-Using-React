@@ -1,5 +1,4 @@
 .Hobby {
-  color: black;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -16,26 +15,29 @@
   }
 }
 .Img1 img {
-  height: 10vh;
-  width: 10vh;
+  height: 15vh;
+  animation: spin3 1s alternate-reverse infinite;
+  width: 15vw;
 }
 .Info1 {
-  transition: opacity 0.5s ease-in-out;
-  padding: 5px;
+  transition: opacity 0.3s ease-in-out;
+  padding: 25px;
   position: absolute;
   font-family: "Permanent Marker";
   background-color: white;
-  max-width: 60%;
+  max-width: 80%;
   opacity: 0;
-  min-height: 15vh;
-  max-height: 20vh;
+  height: 20vh;
   overflow:scroll;
   display: flex;
   justify-content: center;
+  color: blueviolet;
+  font-size: 3vh;
   align-items: center;
+  border: 5px solid greenyellow;
 }
 .Img1 {
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
   min-height: 15vh;
   max-height: 20vh;
   overflow:scroll;
@@ -46,23 +48,27 @@
   position: absolute;
   background-color: transparent;
   border: 5px solid whitesmoke;
+  border-style: dotted;
   z-index: 10;
 }
 .Img2 img {
-  height: 10vh;
-  width: 10vh;
+  height: 15vh;
+  animation: spin2 .7s alternate-reverse infinite;
+  width: 15vh;
 }
 .Info2 {
   font-family: "Permanent Marker";
   margin-top: 20vh;
-  padding: 5px;
+  padding: 25px;
+  font-size: 3vh;
   position: absolute;
   background-color: white;
-  max-width: 60%;
+  max-width: 80%;
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-  min-height: 15vh;
-  max-height: 20vh;
+  color: maroon;
+  transition: opacity 0.3s ease-in-out;
+  height: 20vh;
+  border: 5px solid hotpink;
   overflow:scroll;
   display: flex;
   justify-content: center;
@@ -76,30 +82,34 @@
   width: 60%;
   display: flex;
   justify-content: center;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
   align-items: center;
   position: absolute;
   background-color: transparent;
   border: 5px solid whitesmoke;
+  border-style: dotted;
   z-index: 10;
 }
 .Img3 img {
-  height: 10vh;
-  width: 10vh;
+  height: 12vh;
+  width: 15vh;
+  animation: spin1 1s alternate-reverse infinite;
 }
 .Info3 {
   margin-top: 40vh;
   position: absolute;
   background-color: white;
-  max-width: 60%;
-  padding: 5px;
+  border: 5px solid maroon;
+  max-width: 80%;
+  padding: 25px;
   opacity: 0;
-  min-height: 15vh;
-  max-height: 20vh;
+  color: blue;
+  height: 20vh;
+  font-size: 3vh;
   overflow:scroll;
   font-family: "Permanent Marker";
   display: flex;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
   justify-content: center;
   align-items: center;
 }
@@ -109,13 +119,14 @@
   max-height: 20vh;
   overflow:scroll;
   width: 60%;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
   background-color: transparent;
   border: 5px solid whitesmoke;
+  border-style: dotted;
   z-index: 10;
 }
 
@@ -125,4 +136,41 @@
 
 .Hide {
   opacity: 0;
+}
+
+@media(max-width:450px){
+  .Info1{
+    font-size: 2.5vh;
+  }
+  .Info2{
+    font-size: 2.5vh;
+  }
+  .Info3{
+    font-size: 2.5vh;
+  }
+}
+
+@keyframes spin2 {
+  from {
+    transform: translateX(-10vw);
+  }
+  to {
+    transform: translateX(10vw);
+  }
+}
+@keyframes spin3 {
+  from {
+    transform: scaleX(0.6);
+  }
+  to {
+    transform: scaleX(1.4);
+  }
+}
+@keyframes spin1 {
+  from {
+    transform: scaleZ(0.8);
+  }
+  to {
+    transform: scaleY(1.5);
+  }
 }
