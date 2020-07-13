@@ -22,8 +22,7 @@
   background-color: red;
   width: 100%;
   color: black;
-  text-shadow: -5px -8px rgb(33, 37, 255);
-  font-family: "Permanent Marker";
+  font-family: cursive;
   font-size: 12vh;
   display: flex;
   justify-content: center;
@@ -37,14 +36,13 @@
   background-color: yellow;
   width: 100%;
   color: black;
-  font-family: "Permanent Marker";
+  font-family: cursive;
   font-size: 9vh;
   display: flex;
   flex:1;
   justify-content: center;
   position: relative;
   align-items: center;
-  text-shadow: -5px -8px rgb(255, 66, 33);
   animation: play2 1s 1s forwards;
   transition: all 1s linear ease-out;
 }
@@ -54,13 +52,12 @@
   background-color: green;
   width: 100%;
   color: black;
-  font-family: "Permanent Marker";
+  font-family: cursive;
   font-size: 12vh;
   display: flex;
   flex:1;
   justify-content: center;
   position: relative;
-  text-shadow: -5px -8px rgb(188, 255, 33);
   animation: play3 1s 2s forwards;
   align-items: center;
   transition: all 1s linear ease-in-out;
