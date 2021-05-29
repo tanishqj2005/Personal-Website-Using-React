@@ -46,9 +46,9 @@
   }
 }
 @media (max-width: 400px) {
-  .Button {
+  /* .Button {
     animation: bounce2 .8s alternate-reverse infinite ease-in-out;
-  }
+  } */
 }
 
 @keyframes bounce {
