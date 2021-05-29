@@ -8,23 +8,29 @@
 }
 
 .Text h1 {
-  font-family: "Permanent Marker";
-  color: rgb(128, 240, 134);
+  font-family: cursive;
+  /* font-family: "Permanent Marker"; */
+  /* /* color: rgb(128, 240, 134); */
+  color: black;
   text-indent: inherit;
   font-size: 1.7rem;
   transition: all 0.6s ease-in-out;
+  transform: translateY(-15%);
+  background-color: honeydew;
+  padding: 15px;
   cursor: default;
+  box-shadow: 1.5px 1.5px 9px rgb(227, 255, 71);
 }
 
-@media (min-width: 500px) {
-  .Text h1:hover {
+/* @media (min-width: 500px) { */
+/* .Text h1:hover {
     background-color: honeydew;
     color: black;
     transform: translateY(-15%);
     padding: 15px;
     box-shadow: 3px 3px 13px rgb(227, 255, 71);
-  }
-}
+  } */
+/* } */
 
 @media (max-width: 1100px) and (min-width: 801px) {
   .Text {

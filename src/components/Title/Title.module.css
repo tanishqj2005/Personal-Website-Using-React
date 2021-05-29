@@ -14,21 +14,22 @@
   transition: all 0.3s ease;
   animation: spin 2s alternate-reverse infinite;
   color: yellow;
-  text-shadow: -2px -7px hotpink;
+  text-shadow: -2px -7px red;
+  /* text-shadow: -2px -7px hotpink; */
 }
 
-.Name:hover {
+/* .Name:hover {
   color: gold;
-}
+} */
 
 .Begin {
-  text-shadow: -2px -7px brown;
+  /* text-shadow: -2px -7px brown; */
   transition: all 0.3s ease;
-  animation: spin2 2s 1s alternate-reverse infinite;
+  /* animation: spin2 2s 1s alternate-reverse infinite; */
 }
 
 .Begin:hover {
-  color: rgb(173, 169, 169);
+  color: rgb(233, 239, 239);
 }
 
 @media (max-width: 920px) and (min-width: 700px) {
@@ -45,13 +46,13 @@
 
 @keyframes spin {
   25% {
-    transform: rotate(7deg);
+    transform: rotate(1deg);
   }
   50% {
-    transform: rotate(-8deg);
+    transform: rotate(-1deg);
   }
   75% {
-    transform: rotate(6deg);
+    transform: rotate(1deg);
   }
   100% {
     transform: rotate(0);

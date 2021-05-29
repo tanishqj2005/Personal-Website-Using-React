@@ -6,7 +6,9 @@ const title = () => {
     <div className={classes.Title}>
       <span className={classes.Begin}>Hi, I am</span>
       <pre> </pre>
-      <span className={classes.Name}>Tanishq !</span>
+      <span className={classes.Name}>Tanishq</span>
+      <pre> </pre>
+      <span className={classes.Begin}>!</span>
     </div>
   );
 };

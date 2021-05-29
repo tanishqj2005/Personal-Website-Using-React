@@ -8,7 +8,7 @@
   margin: 10px 30px;
   font-weight: bold;
   background-color: red;
-  animation: bounce 0.7s alternate-reverse infinite ease-in-out;
+  /* animation: bounce 0.7s alternate-reverse infinite ease-in-out; */
   transition: all 0.2s ease-in-out;
 }
 
@@ -16,6 +16,7 @@
   text-decoration: none;
   color: whitesmoke;
   font-family: "Permanent Marker";
+  /* font-family: "Permanent Marker"; */
   font-size: 4vh;
 }
 

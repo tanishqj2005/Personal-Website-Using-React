@@ -6,7 +6,7 @@ const Logo = () => {
 
   return (
     <Link to="/" className={classes.Logo}>
-      Tanishq Joshi.
+      Tanishq.
     </Link>
   );
 };

@@ -1,80 +1,79 @@
-.Info{
-    position: relative;
-    color:whitesmoke;
-    top:8.5vh;
-    left:55vw;
-    animation: bounce 2.2s alternate-reverse infinite;
+.Info {
+  position: relative;
+  color: whitesmoke;
+  top: 8.5vh;
+  left: 58.5vw;
+  /* animation: bounce 2.2s alternate-reverse infinite; */
 }
 
-.Info h1{
-    font-family: 'Permanent Marker';
-    color:yellow;
-    text-indent: inherit;
-    font-size: 5rem;
-    text-shadow: 2px 7px rgb(151, 18, 151);
-    transition: all .4s ease-in-out;
-    cursor: default;
+.Info h1 {
+  font-family: "Permanent Marker";
+  color: yellow;
+  text-indent: inherit;
+  font-size: 5rem;
+  /* text-shadow: 2px 7px rgb(151, 18, 151); */
+  transition: all 0.4s ease-in-out;
+  cursor: default;
 }
 
-.Info h1:hover{
+/* .Info h1:hover{
     color:gold;
+} */
+
+@keyframes bounce {
+  25% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(2deg);
+  }
 }
 
-
-@keyframes bounce{
-    25%{
-        transform: rotate(2deg);
-    }
-    50%{
-        transform: rotate(-1deg);
-    }
-    100%{
-        transform: rotate(2deg);
-    }
+@media (max-width: 1001px) {
+  .Info h1 {
+    font-size: 4rem;
+  }
 }
-
-@media(max-width:1001px){
-    .Info h1{
-        font-size:4rem;
-    }
+@media (max-width: 801px) and (min-width: 700px) {
+  .Info h1 {
+    font-size: 3.3rem;
+  }
 }
-@media(max-width:801px) and (min-width:700px){
-    .Info h1{
-        font-size:3.3rem;
-    }
+@media (max-width: 700px) and (min-width: 530px) {
+  .Info h1 {
+    font-size: 3rem;
+  }
+  .Info {
+    left: 50vw;
+  }
 }
-@media(max-width:700px)and (min-width:530px){
-    .Info h1{
-        font-size:3rem;
-    }
-    .Info{
-        left:50vw;
-    }
+@media (max-width: 530px) and (min-width: 405px) {
+  .Info h1 {
+    font-size: 2.5rem;
+  }
+  .Info {
+    left: 45vw;
+    top: 11vh;
+  }
 }
-@media(max-width:530px)and (min-width:405px){
-    .Info h1{
-        font-size:2.5rem;
-    }
-    .Info{
-        left:45vw;
-        top:11vh;
-    }
+@media (max-width: 405px) and (min-width: 330px) {
+  .Info h1 {
+    font-size: 2.4rem;
+  }
+  .Info {
+    left: 30vw;
+    top: 12vh;
+  }
 }
-@media(max-width:405px)and (min-width:330px){
-    .Info h1{
-        font-size:2.4rem;
-    }
-    .Info{
-        left:30vw;
-        top:12vh;
-    }
-}
-@media(max-width:329px)and (min-width:230px){
-    .Info h1{
-        font-size:2.1rem;
-    }
-    .Info{
-        left:18vw;
-        top:12vh;
-    }
+@media (max-width: 329px) and (min-width: 230px) {
+  .Info h1 {
+    font-size: 2.1rem;
+  }
+  .Info {
+    left: 18vw;
+    top: 12vh;
+  }
 }

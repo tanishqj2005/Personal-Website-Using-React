@@ -30,13 +30,13 @@
 
 @keyframes play{
   25%{
-      transform: rotate(10deg);
+      transform: rotate(2deg);
   }
   50%{
-      transform: rotate(-20deg);
+      transform: rotate(-4deg);
   }
   75%{
-      transform: rotate(30deg);
+      transform: rotate(4deg);
   }
   100%{
       transform: rotate(0);

@@ -3,14 +3,16 @@
   box-sizing: border-box;
   display: block;
   width: 100%;
-  font-size: 3.4vh;
+  font-size: 3.5vh;
+  /* font-size: 3.4vh; */
   transition: all 1s ease-in-out;
 }
 
 .NavigationItem a {
   font-family: "Permanent Marker", cursive;
-  color: green;
-  text-shadow: 1.4px -1.4px whitesmoke;
+  /* color: green; */
+  color: white;
+  /* text-shadow: 1.4px -1.4px whitesmoke; */
   text-decoration: none;
   width: 100%;
   box-sizing: border-box;
@@ -19,7 +21,7 @@
 }
 
 .NavigationItem a:hover{
-  color: orangered;
+  color: greenyellow;
 }
 
 .NavigationItem a:active,

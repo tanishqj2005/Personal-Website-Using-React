@@ -5,33 +5,33 @@
     border:5px solid white;
     border-radius: 18px;
     transform: rotate(-3deg);
-    background-color: darkslateblue;
+    background-color: #1c0773;
     transition: all 1s ease-in-out;
     cursor: pointer;
     
-    animation: spin 4s alternate-reverse infinite;
+    animation: spin 6s alternate-reverse infinite;
 }
 
 .MyImg img{
     margin: 9px 9px 5px 9px;
-    height:40vh;
-    width:40vh;
+    height:45vh;
+    width:45vh;
 }
 
-.MyImg:hover{
+/* .MyImg:hover{
     background-color: rgb(10, 59, 4);
     box-shadow: 2px 2px 20px whitesmoke;
-}
+} */
 
 @keyframes spin{
     25%{
-        transform: rotate(10deg);
+        transform: rotate(1deg);
     }
     50%{
-        transform: rotate(-14deg);
+        transform: rotate(-2deg);
     }
     75%{
-        transform: rotate(8deg);
+        transform: rotate(1deg);
     }
     100%{
         transform: rotate(0);
