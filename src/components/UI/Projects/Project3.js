@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./Project1.module.css";
-import proj3 from "../../../assets/images/project2.png";
+import proj3 from "../../../assets/images/project3.jpg";
 
 const Project3 = () => {
   let classesApply = [classes.Project1];
