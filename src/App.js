@@ -12,7 +12,7 @@ import Loader from "./components/UI/Loader/Loader";
 
 class App extends Component {
   state = {
-    loading: true,
+    loading: true,     // ************************************************************************* // 
   };
   componentDidMount() {
     setTimeout(() => {
