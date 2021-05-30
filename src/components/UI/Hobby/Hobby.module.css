@@ -1,9 +1,10 @@
 .Hobby {
   color: black;
   position: absolute;
-  font-family: "Permanent Marker";
+  font-family: cursive;
+  /* font-family: "Permanent Marker"; */
   background-color: honeydew;
-  padding: 15px;
+  padding: 12px;
   transition: all 0.2s linear;
   border-radius: 15px;
 }
@@ -39,15 +40,15 @@
 .Hobby p {
   color: black;
   text-indent: inherit;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   transition: all 0.6s ease-in-out;
   cursor: default;
 }
 
 .Hobby:hover {
-  background-color: rgb(247, 205, 247);
-  transform: scale(1.1);
-  box-shadow: 3px 3px 13px rgb(233, 238, 206);
+  background-color: rgb(247, 225, 247);
+  /* transform: scale(1.1); */
+  /* box-shadow: 3px 3px 13px rgb(233, 238, 206); */
 }
 
 @media(max-width: 1299px){

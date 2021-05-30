@@ -31,8 +31,18 @@
     left: 27%;
   }
 }
-@media (max-width: 600px) and (min-width: 300px) {
+@media (max-width: 600px) and (min-width: 450px) {
   .Buttons {
     left: 0%;
+  }
+}
+@media (max-width: 450px) {
+  .Buttons {
+    display: none;
+  }
+}
+@media (min-width: 450px) {
+  .Small {
+    display: none;
   }
 }

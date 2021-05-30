@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import classes from "./Projects.module.css";
-import Button from "../../components/UI/Button/Button";
+// import Button from "../../components/UI/Button/Button";
 
 class Projects extends Component {
   render() {
@@ -9,14 +9,7 @@ class Projects extends Component {
         <div className={classes.Info}>
           <h1>Coming Soon!</h1>
         </div>
-        <div className={classes.Buttons}>
-          <Button color="red" to="/hobbies">
-            My Hobbies
-          </Button>
-          <Button color="green" to="/contact">
-            Contact Me
-          </Button>
-        </div>
+        
       </div>
     );
   }

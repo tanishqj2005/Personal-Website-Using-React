@@ -1,21 +1,21 @@
-.MyImg{
-    position: absolute;
-    top: 28.5vh;
-    left:15vw;
-    border:5px solid white;
-    border-radius: 18px;
-    transform: rotate(-3deg);
-    background-color: #1c0773;
-    transition: all 1s ease-in-out;
-    cursor: pointer;
-    
-    animation: spin 6s alternate-reverse infinite;
+.MyImg {
+  position: absolute;
+  top: 28.5vh;
+  left: 15vw;
+  border: 5px solid white;
+  border-radius: 18px;
+  transform: rotate(-3deg);
+  background-color: #1c0773;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+
+  animation: spin 6s alternate-reverse infinite;
 }
 
-.MyImg img{
-    margin: 9px 9px 5px 9px;
-    height:45vh;
-    width:45vh;
+.MyImg img {
+  margin: 9px 9px 5px 9px;
+  height: 45vh;
+  width: 45vh;
 }
 
 /* .MyImg:hover{
@@ -23,63 +23,58 @@
     box-shadow: 2px 2px 20px whitesmoke;
 } */
 
-@keyframes spin{
-    25%{
-        transform: rotate(1deg);
-    }
-    50%{
-        transform: rotate(-2deg);
-    }
-    75%{
-        transform: rotate(1deg);
-    }
-    100%{
-        transform: rotate(0);
-    }
+@keyframes spin {
+  25% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  75% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }
 
-@media(max-width:1100px) and (min-width:701px){
-    .MyImg img{
-        height:35vh;
-        width:35vh;
-    }
+@media (max-width: 1100px) and (min-width: 701px) {
+  .MyImg img {
+    height: 35vh;
+    width: 35vh;
+  }
 }
-@media(max-width:700px) and (min-width:600px){
-    .MyImg img{
-        height:29vh;
-        width:29vh;
-    }
-    .MyImg{
-        left:11vw;
-    }
+@media (max-width: 700px) and (min-width: 600px) {
+  .MyImg img {
+    height: 29vh;
+    width: 29vh;
+  }
+  .MyImg {
+    left: 11vw;
+  }
 }
-@media(max-width:700px)and (min-width:501px){
-    .MyImg img{
-        height:25vh;
-        width:25vh;
-    }
-    .MyImg{
-        left:7vw;
-    }
+@media (max-width: 700px) and (min-width: 501px) {
+  .MyImg img {
+    height: 25vh;
+    width: 25vh;
+  }
+  .MyImg {
+    left: 7vw;
+  }
 }
-@media(max-width:500px)and (min-width:401px){
-    .MyImg img{
-        height:22vh;
-        width:19vh;
-    }
-    .MyImg{
-        left:7vw;
-        top:34vh;
-    }
+@media (max-width: 500px) and (min-width: 451px) {
+  .MyImg img {
+    height: 22vh;
+    width: 19vh;
+  }
+  .MyImg {
+    left: 7vw;
+    top: 34vh;
+  }
 }
 
-@media(max-width:400px)and (min-width:281px){
-    .MyImg img{
-        height: 18vh;
-        width:13vh;
-    }
-    .MyImg{
-        left:7vw;
-        top:33vh;
-    }
+@media (max-width: 450px) {
+  .MyImg {
+    display: none;
+  }
 }

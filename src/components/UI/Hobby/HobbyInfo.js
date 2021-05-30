@@ -5,7 +5,7 @@ const HobbyInfo = () => {
     return(
         <div className={classes.HobbyInfo}>
             <h1>
-                My Hobbies :)
+                My Hobbies
             </h1>
         </div>
     );

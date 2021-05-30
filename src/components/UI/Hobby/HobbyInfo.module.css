@@ -3,7 +3,7 @@
     color:whitesmoke;
     top:3vh;
     left:35vw;
-    animation: bounce 1.2s alternate-reverse infinite;
+    /* animation: bounce 1.2s alternate-reverse infinite; */
 }
 
 .HobbyInfo h1{
@@ -11,14 +11,14 @@
     color:yellow;
     text-indent: inherit;
     font-size: 5rem;
-    text-shadow: 2px 7px rgb(151, 18, 151);
+    /* text-shadow: 2px 7px rgb(151, 18, 151); */
     transition: all .4s ease-in-out;
     cursor: default;
 }
 
-.HobbyInfo h1:hover{
+/* .HobbyInfo h1:hover{
     color:gold;
-}
+} */
 
 
 @keyframes bounce{

@@ -13,13 +13,13 @@
   /* /* color: rgb(128, 240, 134); */
   color: black;
   text-indent: inherit;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   transition: all 0.6s ease-in-out;
   transform: translateY(-15%);
   background-color: honeydew;
   padding: 15px;
   cursor: default;
-  box-shadow: 1.5px 1.5px 9px rgb(227, 255, 71);
+  /* box-shadow: 1.5px 1.5px 9px rgb(227, 255, 71); */
 }
 
 /* @media (min-width: 500px) { */
@@ -68,7 +68,7 @@
     font-size: 1.06rem;
   }
 }
-@media (max-width: 500px) and (min-width: 200px) {
+@media (max-width: 500px) and (min-width: 450px) {
   .Text {
     border-bottom: 1px solid whitesmoke;
     border-top: 1px solid whitesmoke;
@@ -79,5 +79,10 @@
   }
   .Text h1 {
     font-size: 1.2rem;
+  }
+}
+@media (max-width: 450px)  {
+  .Text {
+    display: none;
   }
 }

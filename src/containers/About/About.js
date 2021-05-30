@@ -20,6 +20,14 @@ class About extends Component {
             My Projects
           </Button>
         </div>
+        <div className={classes.Small} style={{width:'100%', textAlign:'center', position :'absolute', top: '26vh'}}>
+          <p style={{ color: "pink", fontFamily:"Permanent Marker", fontSize:40 }}>
+            Please Open the Website on a Bigger Screen
+          </p>
+          <p style={{ color: "white", fontFamily:"Permanent Marker", fontSize:33 }}>
+            Sorry for the inconvenience :(
+          </p>
+        </div>
       </div>
     );
   }
