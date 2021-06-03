@@ -20,7 +20,7 @@ class Home extends Component {
           </Button>
           <Button
             color="blue"
-            to="https://drive.google.com/file/d/1Fyi_LVRh2l3lsEShb6DSxPfyp7Lpl7Rs/view?usp=sharing"
+            to="https://drive.google.com/file/d/1wnKBihD-en72HWE4emKJhyYPYjiwiD_c/view?usp=sharing"
             seperate
           >
             My Resume
